@@ -10,6 +10,8 @@ draft: false
 {{<teaservideo "https://benoitlecallennec-hes.github.io/template_website_course/videos/Chapter6_final.mp4">}}
 Ceci est une "teaser video" : une vidéo qui se lance automatiquement quand on arrive sur la page, muette, et sans contrôles visibles.
 
+{{< export-pdf >}}
+
 ## Titre de niveau 2
 
 ### Titre de niveau 3
