@@ -636,6 +636,20 @@ _Détecte le "https://" ou "http://" pour savoir si la vidéo est hébergée loc
 **Affichage**
 {{<pdf src="https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3088.pdf">}}
 
+## Téléchargement de fichier
+
+Le shortcode `download` affiche un petit bouton avec une icône et le nom du fichier, permettant de le télécharger. L'icône s'adapte automatiquement au type de fichier (PDF, image, archive, fichier texte/code, ou fichier générique), en se basant sur son extension.
+
+**Code**
+
+```
+{{</*download src="snippets/hello.c" text="Code source (hello.c)"*/>}}
+```
+
+**Affichage**
+
+{{<download src="snippets/hello.c" text="Code source (hello.c)">}}
+
 ## Reveal.js Slides
 
 {{<slides "https://he-arc.github.io/1242.2-Langage_CPP-SLIDES/00_Organisation.html">}}
