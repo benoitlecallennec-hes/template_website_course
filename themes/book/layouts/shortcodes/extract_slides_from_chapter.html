@@ -1,5 +1,5 @@
 {{- $base := .Page.File.BaseFileName -}}
-{{- $dir  := strings.TrimSuffix "/" .Page.File.Dir -}}
+{{- $dir  := strings.TrimSuffix "/" (replace .Page.File.Dir "\\" "/") -}}
 
 {{- if not (strings.HasSuffix $base "-SLIDES") -}}
   {{- errorf "extract_slides_from_chapter: current page must end with '-SLIDES'. base=%q file=%q dir=%q" $base .Page.File.Path $dir -}}
